@@ -8,25 +8,66 @@
 </head>
 <body>
 
-  <header>
-    <h1>🌾 AgriVision AI</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">AI Scan</a>
-      <a href="#">Dashboard</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">🌾 AgriVision AI</div>
 
-  <section class="hero">
-    <h2>Monitor Your Crops Without Visiting Your Farm</h2>
-    <p>AI-powered crop disease detection using drone images.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ai-scan.html">AI Scan</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+</nav>
+</header>
 
-    <button>Upload Crop Image</button>
-    <button>Connect Drone</button>
-  </section>
+<section class="hero">
+  <h1>Monitor Your Crops Without Visiting Your Farm</h1>
 
-  <script src="script.js"></script>
+  <p>
+    AI-powered crop disease detection using drone images.
+    Farmers can monitor crop health remotely and receive instant treatment recommendations.
+  </p>
+
+  <div class="buttons">
+    <button onclick="window.location.href='ai-scan.html'">
+    Upload Crop Image
+</button>
+
+<button class="secondary" onclick="window.location.href='dashboard.html'">
+    Connect Drone
+</button>
+  </div>
+</section>
+
+<section class="features">
+
+  <div class="card">
+    <h2>🤖 AI Detection</h2>
+    <p>Detect crop diseases using Artificial Intelligence.</p>
+  </div>
+
+  <div class="card">
+    <h2>🚁 Drone Monitoring</h2>
+    <p>Capture images directly from drone cameras.</p>
+  </div>
+
+  <div class="card">
+    <h2>💊 Treatment</h2>
+    <p>Get smart pesticide and treatment recommendations.</p>
+  </div>
+
+  <div class="card">
+    <h2>📊 Dashboard</h2>
+    <p>Monitor crop health reports anytime.</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 AgriVision AI | Engineering Project
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
