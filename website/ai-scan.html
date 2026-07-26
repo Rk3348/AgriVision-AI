@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Scan | AgriVision AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">🌾 AgriVision AI</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="ai-scan.html">AI Scan</a>
+<a href="#">Dashboard</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>AI Crop Disease Detection</h1>
+
+<p>
+Upload a crop image and let AI analyze it.
+</p>
+<label for="cropSelect"><b>Select Crop</b></label><br><br>
+
+<select id="cropSelect">
+    <option value="">-- Select Crop --</option>
+    <option value="Tomato">🍅 Tomato</option>
+    <option value="Wheat">🌾 Wheat</option>
+    <option value="Cotton">🌿 Cotton</option>
+    <option value="Soybean">🌱 Soybean</option>
+</select>
+
+<br><br>
+<input type="file" id="imageUpload" accept="image/*">
+
+<br><br>
+
+<img id="preview"
+style="display:none;max-width:300px;border-radius:15px;">
+
+<br><br>
+
+<button id="analyzeBtn">
+Analyze Crop
+</button>
+
+<div id="loading" style="display:none; margin-top:20px;">
+    <h2>🤖 AI is analyzing your crop...</h2>
+    <p>Please wait a few seconds...</p>
+</div>
+
+<div id="result" style="display:none;margin-top:30px;background:#123524;padding:20px;border-radius:15px;max-width:500px;">
+
+<h2>AI Analysis Result</h2>
+
+<p><b>Crop:</b> <span id="cropName"></span></p>
+
+<p><b>Disease:</b> <span id="disease"></span></p>
+
+<p><b>Confidence:</b> <span id="confidence"></span></p>
+
+<p><b>Severity:</b> <span id="severityBadge"></span></p>
+
+<p><b>Recommendation:</b> <span id="recommendation"></span></p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
