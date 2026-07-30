@@ -1,4 +1,4 @@
-# 🌾 AgriVision AI
+# 🌾 AgriVision AI...
 
 ## 🚀 Project Overview
 AgriVision AI is an AI-powered crop health monitoring system that helps farmers detect crop diseases using drone images. Farmers can monitor their fields remotely and receive treatment recommendations.
